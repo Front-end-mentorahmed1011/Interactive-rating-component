@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+
+</head>
+<body>
+<!-- container -->
+
+<div class="container">
+
+  <!-- face -->
+
+  <div class="face">
+  <!-- front face -->
+    <div class="front_face" id="Fface">
+      <div class="image1">
+        <img src="icon-star.svg" class="star">
+      </div>
+      <div class="h3">
+        <h3>How did we do?</h3>
+      </div>
+      <div class="feedback">
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
+      </div>
+      <div class="buttons">
+        <button onclick="rate('1')" class="buttons" id="btn">1</button>
+        <button onclick="rate('2')" class="buttons" id="btn">2</button>
+        <button onclick="rate('3')" class="buttons" id="btn">3</button>
+        <button onclick="rate('4')" class="buttons" id="btn">4</button>
+        <button onclick="rate('5')" class="buttons" id="btn">5</button>
+      </div>
+    
+    <div class="submit">
+      <input type="submit" id="submit">
+    </div>
+  </div> 
+<!-- back face -->
+    <div class="back_face" id="Bface">
+      <div class="image2">
+        <img src="illustration-thank-you.svg" class="illust">
+      </div>
+      <div class="rating">
+        You selected <span> </span> out of 5
+      </div>
+      <div class="thanks">
+        <h3>Thank you!</h3>
+      </div>
+      <div class="message">
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+          dont hesitate to get in touch!</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- Rating state start -->
+
+<script src="main.js"></script>
+  <!-- How did we do?
+
+  Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!
+
+  1 2 3 4 5
+
+  Submit -->
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <!-- You selected out of 5
+
+  Thank you!
+
+  We appreciate you taking the time to give a rating. If you ever need more support, 
+  dont hesitate to get in touch!
+
+  Thank you state end -->
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
